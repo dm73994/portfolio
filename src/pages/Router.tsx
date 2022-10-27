@@ -7,9 +7,11 @@ import Skills from './views/skills'
 const Router = () => {
   return (
     <Routes>
-        <Route path='me' element={<About />} />
-        <Route path='skills' element={<Skills />} />
-        <Route path='projects' element={<Projects />} />
+      <Route index element={<About />} />
+      <Route path='me' element={<About />} />
+      <Route path='skills' element={<Skills />} />
+      <Route path='projects' element={<Projects />} />
+      <Route path="*" element={<h1>404</h1>} />
     </Routes>
   )
 }

@@ -1,0 +1,15 @@
+@import url('./Normalize.css');
+@import url('./NavigationBar.css');
+
+/* GLOBALS */
+*,html, body{
+    font-family: 'Roboto', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* ETIQUETAS GLOBALES */
+a{
+    text-decoration: none;
+}
