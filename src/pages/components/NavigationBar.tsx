@@ -13,12 +13,13 @@ const NavButton = ({path, text, onClick}: navBtnProps) => {
         <NavLink 
             to={path}
             className={({isActive}) => {
-                return 'navBtn'
-                //return `navLink ${isActive ? 'navLinkActive' : ''}`;
+                return `navBtn ${isActive?'navLinkActive':''}`;
             }}
             onClick={onClick}
         >
-            {Translate(text)}
+            <p className='navText'>
+                {Translate(text)}
+            </p>
         </NavLink> 
     )
 }

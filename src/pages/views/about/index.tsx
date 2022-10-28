@@ -3,7 +3,15 @@ import Translate from '../../utils/Translate'
 
 const About = () => {
   return (
-    <div> {Translate('general.about')} </div>
+    <section className='aboutContainer'>
+      <article>
+        <h1> {Translate('general.about')} </h1>
+        <p> {Translate('about.description')} </p>
+      </article>
+
+      
+
+    </section>
   )
 }
 

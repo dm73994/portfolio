@@ -3,5 +3,8 @@
         "skills": "Skills",
         "about": "About me",
         "projects": "Projects"
+    },
+    "about": {
+        "description": "Hi! Welcom to my website, i'm David, a system ingenier and software developer from Colombia,  you will find all you need to know about my work and what can i do, hope you like it!"
     }
 }

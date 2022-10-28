@@ -1,10 +1,11 @@
 @import url('./Normalize.css');
 @import url('./NavigationBar.css');
+@import url('./About.css');
 
 /* GLOBALS */
 *,html, body{
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #000;
 }
 *, *:before, *:after {
     box-sizing: inherit;

@@ -15,6 +15,8 @@
         height: 100vh;
         position: absolute;
         left: -100%;
+        top: 0;
+        z-index: 100;
     }
 
     .navBtn{
@@ -45,8 +47,10 @@
         width: 2.5rem;
         background-color: black;
         position: absolute;
-        z-index: 100;
+        z-index: 110;
         padding: .3rem;
+        top: 0;
+        left: 0;
     }
     .line{
         height: .3rem;
@@ -76,4 +80,55 @@
 }
 
 
-/* ANIMACIONES */
+/* DESKTOP */
+
+@media only screen and (min-width: 700px) {
+    .navContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+        position: relative;
+    }
+    .navBtn{
+        position: relative;   
+    }
+    .navBtn::before{
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .navText{
+        padding: 0;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+    .navText::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 3px;
+        height: 3px;
+        background-color: #8a2be2;
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border-radius: 50%;
+    }
+    .navText:hover::before{
+        width: 100%;
+        border-radius: 0;
+    }
+    .navLinkActive:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 3px;
+        background-color: #8a2be2;
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+
