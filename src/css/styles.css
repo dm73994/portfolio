@@ -4,6 +4,7 @@
 /* GLOBALS */
 *,html, body{
     font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -12,4 +13,5 @@
 /* ETIQUETAS GLOBALES */
 a{
     text-decoration: none;
+    text-transform: uppercase;
 }
