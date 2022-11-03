@@ -2,9 +2,11 @@
     "general": {
         "skills": "Habilidades",
         "about": "Sobre mi",
-        "projects": "Proyectos"
+        "projects": "Proyectos",
+        "hi": "Hola!",
+        "nextPage": "Saber más!"
     },
     "about": {
-        "description": "Hola, bienvenido a mi página web, soy David, un ingeniero de sistemas y desarrollador de software de Colombia, encontrarás todo lo que necesitas saber sobre mi trabajo y lo que puedo hacer, ¡espero que te guste!"
+        "description": "Bienvenido a mi página web, soy David, ingeniero de sistemas y desarrollador de software de Colombia, encontrarás todo lo que necesitas saber sobre mi trabajo y lo que puedo hacer, ¡espero que te guste!"
     }
 }

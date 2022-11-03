@@ -1,6 +1,100 @@
 /* MOVIL */
 @media only screen and (max-width: 700px){
     .aboutContainer{
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about > a{
+        display: flex;
+        border-radius: 30px;
+        border: 1px solid #8a2be2;
+        padding: 0 3rem;
+        justify-content: center;
+        align-items: center;
+        background-color: #8a2be2;
+    }
+    a > div{
+        font-size: 2rem;
+        margin-left: .5rem;
+        background-color: #8a2be2;
+    }
+    .pNext{
+        background-color: #8a2be2;
+        text-align: justify;
+    }
+}
+
+/** DESKTOP **/
+@media only screen and (min-width: 701px){
+    .aboutContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .aboutContainer > article > p{
+        line-height: 2rem;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about > a{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about > a:hover{
+        border: 1px solid #8a2be2;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .about > a:hover .pNext{
+        font-size: small;
+    }
+    .pNext{
+        text-align: justify;
+        font-size: 0;
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+
+/** GENERAL **/
+.imgCoder{
+    /* animation: rgb 5s infinite; */
+    filter: saturate(1);
+    width: 40vw;
+}
+
+@keyframes rgb{
+    0%{
+        filter: saturate(1);
+    }
+    25%{
+        filter: saturate(10);
+    }
+    50%{
+        filter: saturate(15);
+    }
+    75%{
+        filter: saturate(10);
+    }
+    100%{
+        filter: saturate(1);
     }
 }

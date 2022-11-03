@@ -5,7 +5,8 @@
 /* GLOBALS */
 *,html, body{
     font-family: 'Roboto', sans-serif;
-    color: #000;
+    color: #fff;
+    background-color: #000;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -15,4 +16,58 @@
 a{
     text-decoration: none;
     text-transform: uppercase;
+}
+
+h1,h2,h3,h4,h5,p{
+    color: #fff;
+}
+
+.container{
+    padding: 3rem;
+    padding-top: 0;
+}
+
+/** COMPONENTS **/
+.networks{
+    background-color: transparent;
+}
+.networks a{
+    position: relative; 
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff !important;
+    transition: .5s;
+    margin: .5rem;
+}
+.networks a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #8a2be2;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+.networks a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #8a2be2;
+}
+  
+.networks a:hover {
+    color: #8a2be2;
+    box-shadow: 0 0 5px #8a2be2;
+    text-shadow: 0 0 5px #8a2be2;
+}
+.red{
+    background: #333;   
+    font-size: 1.3rem;
 }

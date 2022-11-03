@@ -26,6 +26,10 @@
         margin: 1rem 0;
         border-radius: 10px 20px;
     }
+    .navText{
+        background-color: transparent;
+        color: #000
+    }
 
     /* ANIMACION CLOSE OPEN MENU CONTAINER */
     .open{
@@ -45,7 +49,6 @@
 
         height: 2.5rem;
         width: 2.5rem;
-        background-color: black;
         position: absolute;
         z-index: 110;
         padding: .3rem;
